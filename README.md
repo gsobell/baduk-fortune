@@ -31,31 +31,29 @@ $ brew install fortune
 Save the list of fortunes and the corresponding `.dat` file to `/usr/share/fortune/`, either manually, or by running the following
 
 ```shell
-curl -O baduk -O baduk.dat
-sudo mv baduk baduk.dat /usr/share/fortune/
+curl -LO https://github.com/gsobell/baduk-fortune/raw/shodan-branch/baduk
+curl -LO https://github.com/gsobell/baduk-fortune/raw/shodan-branch/baduk.dat
+sudo mv baduk baduk.dat /usr/share/fortune
 ```
 Open a terminal, and run 
 
 `fortune baduk`
 
-To receive a new fortune every time you log on, add the above to your shell config (i.e. `.bashrc` or `.zshrc`) 
+To receive a new fortune every time you log on, add the above to your shell config (i.e. `.bashrc` or `.zshrc`)  
+For extra fun, use in conjuction with `cowsay` or `cowfortune`!
 
 ## Q&A
-Q: Why isn't it called go-fortune?
-
+Q: Why isn't it called go-fortune?  
 A: Because it [already exists](https://github.com/bmc/fortune-go), it's a fortune rewrite in GoLang.
 
-Q: My favorite quote is missing. Can you add it?
+Q: My favorite quote is missing. Can you add it?  
+A: Sure! Open an issue or pull request! Since a new `.dat` file has to be generated each time, additions will be added in groups.
 
-A: Sure! Open an issue or pull request!
-
-Q: Does it support GTP (Go Text Protocol)?
-
+Q: Does it support GTP (Go Text Protocol)?  
 A: I'll get back to you on that. 
 
 
-Fortunes sourced from:
-
+Fortunes sourced from:  
 [Sensei's "Great Quotes"](https://senseis.xmp.net/?GreatQuotes) - 
 [Sensei's "Old Mottos"](https://senseis.xmp.net/?OldMottos) -
 [Sensei's "Humour Q&A"](https://senseis.xmp.net/?HumourQandAs) - 
