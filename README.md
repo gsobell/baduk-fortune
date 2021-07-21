@@ -14,7 +14,7 @@
 A collection of [baduk](https://en.wikipedia.org/wiki/Go_(game)) fortunes for the terminal
 
 
-# Usage
+## Usage
 Install [fortune](https://linux.die.net/man/6/fortune) or [fortune-mod](https://github.com/shlomif/fortune-mod)
 
 `fortune` is a commnad line program that displays a quote or proverb when run. Sort of like a low-calorie fortune cookie.
@@ -41,7 +41,7 @@ Open a terminal, and run
 
 To receive a new fortune every time you log on, add the above to your shell config (i.e. `.bashrc` or `.zshrc`) 
 
-# Q&A
+## Q&A
 Q: Why isn't it called go-fortune?
 
 A: Because it [already exists](https://github.com/bmc/fortune-go), it's a fortune rewrite in GoLang.
