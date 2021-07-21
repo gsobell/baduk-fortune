@@ -13,7 +13,6 @@
 # baduk-fortune ○●
 A collection of [baduk](https://en.wikipedia.org/wiki/Go_(game)) fortunes for the terminal
 
-
 ## Usage
 Install [fortune](https://linux.die.net/man/6/fortune) or [fortune-mod](https://github.com/shlomif/fortune-mod)
 
