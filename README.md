@@ -16,7 +16,7 @@ A collection of [baduk](https://en.wikipedia.org/wiki/Go_(game)) fortunes for th
 ## Usage
 Install [fortune](https://linux.die.net/man/6/fortune) or [fortune-mod](https://github.com/shlomif/fortune-mod)
 
-`fortune` is a commnad line program that displays a quote or proverb when run. Sort of like a low-calorie fortune cookie.
+`fortune` is a command line program that displays a quote or proverb when run. It's sort of like a calorie-free fortune cookie.
 
 ```shell
 # Debian/Ubuntu
@@ -40,7 +40,7 @@ Open a terminal, and run
 `fortune baduk`
 
 To receive a new fortune every time you log on, add the above to your shell config (i.e. `.bashrc` or `.zshrc`)  
-For extra fun, use in conjuction with `cowsay` or `cowfortune`!
+For extra fun, use in conduction with `cowsay` or `cowfortune`!
 
 ## Q&A
 Q: Why isn't it called go-fortune?  
@@ -48,9 +48,6 @@ A: Because it [already exists](https://github.com/bmc/fortune-go), it's a fortun
 
 Q: My favorite quote is missing. Can you add it?  
 A: Sure! Open an issue or pull request! Since a new `.dat` file has to be generated each time, additions will be added in groups.
-
-Q: Does it support GTP (Go Text Protocol)?  
-A: I'll get back to you on that. 
 
 
 Fortunes sourced from:  
