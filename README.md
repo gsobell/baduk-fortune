@@ -47,7 +47,7 @@ Q: Why isn't it called go-fortune?
 A: Because it [already exists](https://github.com/bmc/fortune-go), it's a fortune rewrite in GoLang.
 
 Q: My favorite quote is missing. Can you add it?  
-A: Sure! Open an issue or pull request! Since a new `.dat` file has to be generated each time, additions will be added in groups.
+A: Sure! Open a pull request! Since a new `.dat` file has to be generated each time, additions will be added in batches.
 
 
 Fortunes sourced from:  
@@ -62,4 +62,4 @@ Fortunes sourced from:
 
 List was scrubbed for uniformity, brevity, and duplicates.
 Proverbs that needed further context were selectively excluded.
-I tried not to include any "rude" or "crude" items from the above lists, please let me know if you find one.
+Any "rude" or "crude" items from the above lists were excluded, please open an issue if you find one.
