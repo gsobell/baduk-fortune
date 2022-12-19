@@ -25,6 +25,9 @@ $ sudo apt install fortune-mod
 # Arch
 $ sudo pacman -S fortune-mod
 
+# nix-shell
+$ nix-shell -p fortune
+
 # Mac
 $ brew install fortune
 ```
@@ -48,6 +51,7 @@ A: Because it [already exists](https://github.com/bmc/fortune-go), it's a fortun
 
 Q: My favorite quote is missing. Can you add it?  
 A: Sure! Open a pull request! Since a new `.dat` file has to be generated each time, additions will be added in batches.
+> Note to self: use `strfile -c % baduk baduk.dat` to generate a new `.dat` file
 
 
 Fortunes sourced from:  
