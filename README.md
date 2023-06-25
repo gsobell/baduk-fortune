@@ -14,35 +14,48 @@
 A collection of [baduk](https://en.wikipedia.org/wiki/Go_(game)) fortunes for the terminal
 
 ## Usage
-Install [fortune](https://linux.die.net/man/6/fortune) or [fortune-mod](https://github.com/shlomif/fortune-mod)
 
-`fortune` is a command line program that displays a quote or proverb when run. It's sort of like a calorie-free fortune cookie.
+### Installation
+Install [fortune](https://linux.die.net/man/6/fortune) or [fortune-mod](https://github.com/shlomif/fortune-mod) (or even [misfortune](https://github.com/ncfavier/misfortune)).
+
+`fortune` is a command line program that displays a quote or proverb when run. It is available on most operating systems:
 
 ```shell
-# Debian/Ubuntu
-$ sudo apt install fortune-mod
-
 # Arch
-$ sudo pacman -S fortune-mod
+sudo pacman -S fortune-mod
+
+# Debian/Ubuntu (WSL)
+sudo apt install fortune-mod
+
+# openBSD
+doas pkg_add fortune
 
 # nix-shell
-$ nix-shell -p fortune
+nix-shell -p fortune
 
 # Mac
-$ brew install fortune
+brew install fortune
 ```
-Save the list of fortunes and the corresponding `.dat` file to `/usr/share/fortune/`, either manually, or by running the following
+Save the list of fortunes and the corresponding `.dat` file to `/usr/share/fortune/` by running the following:
 
 ```shell
 curl -LO https://github.com/gsobell/baduk-fortune/raw/shodan-branch/baduk
 curl -LO https://github.com/gsobell/baduk-fortune/raw/shodan-branch/baduk.dat
 sudo mv baduk baduk.dat /usr/share/fortune
 ```
-Open a terminal, and run 
+
+To install on Arch-based distros, use the [PKGBUILD](https://github.com/gsobell/baduk-fortune/blob/shodan-branch/PKGBUILD):
+
+```sh
+curl -O https://raw.githubusercontent.com/gsobell/baduk-fortune/shodan-branch/PKGBUILD
+makepkg -i
+```
+
+To recieve a fortune, open a terminal, and run:
 
 `fortune baduk`
 
-To receive a new fortune every time you log on, add the above to your shell config (i.e. `.bashrc` or `.zshrc`)  
+For a new fortune every time you log on, add the above to your shell config (i.e. `.bashrc` or `.zshrc`)
 For extra fun, use in conduction with `cowsay` or `cowfortune`!
 
 ## Q&A
@@ -51,8 +64,6 @@ A: Because it [already exists](https://github.com/bmc/fortune-go), it's a fortun
 
 Q: My favorite quote is missing. Can you add it?  
 A: Sure! Open a pull request! Since a new `.dat` file has to be generated each time, additions will be added in batches.
-> Note to self: use `strfile -c % baduk baduk.dat` to generate a new `.dat` file
-
 
 Fortunes sourced from:  
 [Sensei's "Great Quotes"](https://senseis.xmp.net/?GreatQuotes) - 
@@ -65,5 +76,4 @@ Fortunes sourced from:
 ***
 
 List was scrubbed for uniformity, brevity, and duplicates.
-Proverbs that needed further context were selectively excluded.
 Any "rude" or "crude" items from the above lists were excluded, please open an issue if you find one.
